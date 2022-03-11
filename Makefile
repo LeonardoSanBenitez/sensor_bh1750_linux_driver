@@ -1,4 +1,4 @@
-obj-m += hello_driver.o
+obj-m += sensor_bh1750.o
 #subdir-ccflags-y := -I$(src)/include
 #subdir-ccflags-y += -Wall -g
 
