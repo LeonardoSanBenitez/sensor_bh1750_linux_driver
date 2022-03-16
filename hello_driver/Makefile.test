@@ -1,0 +1,11 @@
+# To test locally
+obj-m+=hello_driver.o
+
+all:
+	make -C /lib/modules/5.4.30/build/ M=/root/hello_driver modules
+clean:
+	make -C /lib/modules/5.4.30/build/ M=/root/hello_driver clean
+	
+# now load with:
+sudo insmod hello_driver.ko
+
